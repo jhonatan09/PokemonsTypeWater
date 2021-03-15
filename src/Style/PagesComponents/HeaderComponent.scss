@@ -1,0 +1,76 @@
+@import '../Geral/colors.scss';
+
+
+.header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 0 1%;
+    background-color: #0cddff;
+    .logo{
+        width: 10%;
+        img {
+            width: 80px;
+        }
+    }
+    .content {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        input {
+            height: 50px;
+            width: 70%;
+            border: 1px solid $colorOrangeBarSearch;
+            padding-left: 8px;
+            font-size: 18px;
+            font-weight: 500;
+            color: $colorBarTextSearch;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                text-overflow: clip;
+            }
+        }
+        button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            color: $colorBarSearchBtn;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 8px;
+            margin-left: 16px;
+            background-color: $colorBarSearchBtnBg;
+            &:focus{
+                outline: none;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        .icon-cart {
+            margin-left: 16px;
+            cursor: pointer;
+            svg {
+                height: 50px;
+                width: 50px;
+                fill: $colorWhite;
+            }
+        }
+    }
+    .mob {
+        display: none;
+    }
+    @media (max-width: 767px){
+        flex-wrap: wrap;
+        justify-content: center;
+        .mob {
+            display: block;
+        }
+
+        .logo{
+            width: 80px;
+        }
+    }
+}

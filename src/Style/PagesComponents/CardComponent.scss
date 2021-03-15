@@ -1,0 +1,43 @@
+@import '../Geral/colors.scss';
+
+
+.persons {
+    width: 74%;
+    margin: 4% auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: auto;
+    max-height: 800px;
+    .card {
+        width: 350px;
+        height: 392px;
+        padding: 1%;
+        background-color: $colorBgCards;
+        margin: 0 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            margin-bottom: 3%;
+            img {
+                width: 120px;
+            }
+            span,
+            h3{
+                color: $colorFontSpan;
+               line-height: 1.4;
+            }
+        }
+    }
+    &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; 
+    } 
+}

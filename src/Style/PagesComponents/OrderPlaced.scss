@@ -1,0 +1,48 @@
+@import '../Geral/colors.scss';
+
+
+.orderplaced{
+    width: 100;
+    min-height: 794px;
+    background-image: linear-gradient(#ff0000, #ffff00);
+    &-content {
+        position: absolute;
+        width: 50%;
+        height: 400px;
+        margin: 5% auto;
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000;
+        border-radius: 8px;
+        flex-direction: column;
+        background-color: $colorWhite;
+        h1{
+            color: $colorFontSpan;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        span{
+            color: $colorFontSpan;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        @media (max-width: 767px) {
+            width: 80%;
+            height: 280px;
+            margin-top: 32px;
+            h1{
+                font-size: 26px;
+            }
+    
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+}

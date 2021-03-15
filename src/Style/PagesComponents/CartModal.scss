@@ -1,0 +1,96 @@
+@import '../Geral/colors.scss';
+
+.cart {
+    width: 26%;
+    min-height: 500px;
+    background: #2c406b;
+    margin-top: 4%;
+    margin-left: 1%;
+    position: relative;
+    height: 790px;
+    &-body {
+        &_title {
+            color: #fff;
+            text-align: center;
+            margin: 3% 0;
+            padding: 1%;
+            font-size: 30px;
+        }
+        &_details {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+            height: 80px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+        &_btn {
+            position: absolute;
+            bottom: 16px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            height: 48px;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 700;
+            border: none;
+            background: antiquewhite;
+        }
+        &-items {
+            min-height: 200px;
+            max-height: 600px;
+            overflow: auto;
+            &::-webkit-scrollbar {
+                width: 8px;
+                background: #e2efff; 
+            }
+            .empty {
+                width: 90%;
+                display: flex;
+                height: 50px;
+                align-items: center;
+                justify-content: center;
+                color: $colorWhite;
+                font-weight: 700;
+                font-size: 26px;
+                margin: auto;
+            } 
+        }
+        .price-total{
+            width: 90%;
+            display: flex;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            color: $colorWhite;
+            font-weight: 700;
+            font-size: 26px;
+            margin: auto;
+        }
+    }
+    @media (max-width: 767px) {
+        min-height: 405px;
+        width: 94%;
+        height: 265px;
+        position: absolute;
+        display: none;
+        &-body {
+            &-items {
+                min-height: 200px;
+                max-height: 200px;
+            }
+        }
+        &.active {
+            display: block;
+        }
+    }
+}
