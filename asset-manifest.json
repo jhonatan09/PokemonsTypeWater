@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PokemonsTypeWater/static/css/main.78b25cff.chunk.css",
-    "main.js": "/PokemonsTypeWater/static/js/main.c920a919.chunk.js",
-    "main.js.map": "/PokemonsTypeWater/static/js/main.c920a919.chunk.js.map",
+    "main.js": "/PokemonsTypeWater/static/js/main.b0f9fc19.chunk.js",
+    "main.js.map": "/PokemonsTypeWater/static/js/main.b0f9fc19.chunk.js.map",
     "runtime-main.js": "/PokemonsTypeWater/static/js/runtime-main.e60ffd5a.js",
     "runtime-main.js.map": "/PokemonsTypeWater/static/js/runtime-main.e60ffd5a.js.map",
     "static/js/2.666a963e.chunk.js": "/PokemonsTypeWater/static/js/2.666a963e.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.e60ffd5a.js",
     "static/js/2.666a963e.chunk.js",
     "static/css/main.78b25cff.chunk.css",
-    "static/js/main.c920a919.chunk.js"
+    "static/js/main.b0f9fc19.chunk.js"
   ]
 }
