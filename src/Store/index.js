@@ -61,7 +61,7 @@ const HandleClick = async(namePoke) => {
   }
 }
 
-let dados = localStorage.getItem('@B2W:Order');
+let dados = localStorage.getItem('@B2W:Orders');
   let dadosArr = JSON.parse(dados)
   
 
@@ -75,8 +75,8 @@ useEffect(() => {
 
 const ClickAddToCart = (details) => {
   setCartDetails([...cartDetails, details]);
-  localStorage.removeItem('@B2W:Order');
-  localStorage.setItem('@B2W:Order', JSON.stringify(cartDetails));
+  localStorage.removeItem('@B2W:Orders');
+  localStorage.setItem('@B2W:Orders', JSON.stringify(cartDetails));
   setChangeValue(currentValor => currentValor != changeValue);
 }
 
